@@ -8,6 +8,15 @@
   pointer-events: none;
 }
 
+.portrait {
+  overflow: hidden;
+  border-radius: 50%;
+  border: 5px solid white;
+}
+.portrait img {
+  height: 120px;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

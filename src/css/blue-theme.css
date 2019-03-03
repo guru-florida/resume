@@ -1,0 +1,131 @@
+body {
+    background-color: #3e484a;
+    font-size: 9pt;
+}
+p {
+    color: #a0a0a0;
+}
+
+.section {
+    background-color: #3e484a;
+}
+.section.inverted {
+    background-color: #00d1ff;
+}
+.section.transparent {
+    background-color: transparent;
+}
+.section.vertical .section-content.responsive {
+    flex-direction: column;
+}
+.section .section-content {
+    padding: 1em;
+}
+.section header {
+    padding: 5px;
+    color: #00d1ff;
+}
+.section.inverted header {
+    color: #3e484a;
+}
+.section.inverted p {
+    color: #333333;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    overflow: hidden;
+}
+.section .section-content.responsive {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+.section .layer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.segment {
+    margin: 15px;
+}
+
+.segment h2 {
+    margin: 0;
+    text-align: left;
+}
+.segment h3 {
+    margin: 0;
+    text-align: left;
+}
+.segment h4 {
+    float: right;
+    margin: 0;
+}
+.segment p {
+    text-align: justify;
+    margin: 0 0 10px 0;
+}
+
+.section.rings .section-content svg {
+    height: 96px;
+    width: 96px;
+}
+.section.rings .section-content .segment {
+    width: 128px;
+    color: #a0a0a0;
+}
+.section.rings .section-content .segment header {
+    height: 32px;
+}
+.section.rings .section-content .segment h2 {
+    font-size: 13px;
+    color: #00d0ff;
+    text-align: center;
+    display:inline-block;
+    vertical-align: middle;
+    line-height: 1.25em;
+}
+
+.rating {
+    color: #eee;
+    width: 190px;
+    text-align: left;
+    line-height: 13px;
+}
+.rating span {
+    float: left;
+    margin-right: 5px;
+    clear: both;
+}
+.rating span i {
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    margin-left: 2px;
+    display: inline-block;
+}
+.rating span i.off {
+    background-color: #486769;
+}
+.rating span i.on {
+    background-color: #00ecf9;
+}
+
+.skills h2 {
+    color: white;
+}
+.skills .bg-decorations {
+    height: 100%;
+}
+.skills .bg-dec1 {
+    background-color: #00d0ff63;
+    width: 100%;
+}
