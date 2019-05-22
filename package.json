@@ -3,8 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@types/d3": "^5.7.1",
     "@types/react-motion": "0.0.28",
     "classnames": "^2.2.6",
+    "d3": "^5.9.1",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
     "react-motion": "^0.5.2",

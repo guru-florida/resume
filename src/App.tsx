@@ -2,18 +2,20 @@ import React, { Component } from 'react';
 import { Section, Segment } from './rezui';
 import Skills from './components/Skills';
 import portrait from './images/profile.jpeg';
+import CanadianFlag from './images/canadian.svg';
+import AmericanFlag from './images/usa.svg';
 import MicroRing from './kpi/micro-ring';
 import './css/App.css';
 import './css/blue-theme.css';
 import './kpi/kpi.css';
 import './kpi/micro-ring.css';
+import D3HexTiles from "./kpi/d3-hex";
 
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header>
             <Section inverted>
                 <Segment className='portrait'>
                     <img src={portrait} alt="fancy meeting you here" />
@@ -39,11 +41,25 @@ class App extends Component {
                         Largo, Florida
                         33773, USA
                     </p>
-                    <h3>Citizenship</h3>
-                    <p>
-                        CANADIAN * AMERICAN
-                    </p>
+                    <h3><img className="flag" src={CanadianFlag} /> Citizenship <img className="flag" src={AmericanFlag} /></h3>
                 </Segment>
+            </Section>
+            <Section>
+                    <D3HexTiles
+                        id='web-skills-tiles' width={1000} height={350} radius={75} margin={4}
+                        visibility={0.26}
+                        tiles={[
+                            { rating: 4, caption: 'React', detail:'Strong skills using\nvirtual DOM based\nweb libraries' },
+                            { rating: 4, caption: 'React Native', detail:'Native iOS/Android\napps using the power\nof React' },
+                            { rating: 4, caption: 'D3', detail:'Data visualization\nusing advanced SVG\nbased declaritive\nstyle library' },
+                            { rating: 3, caption: 'Angular' },
+                            { rating: 3, caption: 'Angular Native' },
+                            { rating: 5, caption: 'jQuery', detail:'The original power\nlibrary for Javascript' },
+                            { rating: 5, caption: 'HTML', detail:'Powerful skills in\ngeneral web design'},
+                            { rating: 5, caption: 'CSS', detail:'Fluent understanding\nof cascading stylesheets\nincluding CSS3\nexpressions' },
+                            { rating: 4, caption: 'PHP' }
+                        ]}
+                    />
             </Section>
             <Section>
                 <Segment cols={12}>
@@ -105,7 +121,6 @@ class App extends Component {
                 </Segment>
             </Section>
             <Skills />
-        </header>
       </div>
     );
   }

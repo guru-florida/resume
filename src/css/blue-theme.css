@@ -6,6 +6,12 @@ p {
     color: #a0a0a0;
 }
 
+img.flag {
+    position: relative;
+    top: 1px;
+    width: 25px;
+}
+
 .section {
     background-color: #3e484a;
 }
@@ -128,4 +134,24 @@ p {
 .skills .bg-dec1 {
     background-color: #00d0ff63;
     width: 100%;
+}
+
+svg.hex-tiles path.tile {
+    fill: rgba(00,208,255,0.2);
+    stroke: rgba(00,208,255,0.8);
+    stroke-width: 1;
+}
+svg.hex-tiles path.tile.hidden {
+    fill: none;
+    stroke: rgba(255,255,255,0.2);
+    stroke-width: 1;
+}
+
+svg.hex-tiles g.hex .head {
+    font-size: 120%;
+    fill: rgba(00,208,255,0.9);
+}
+svg.hex-tiles g.hex .detail {
+    font-size: 96%;
+    fill: rgba(00,208,255,0.9);
 }
